@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>school grading system</h1>
+    <div class="pimp">
+    <input type="text" placeholder="type your name" id="ori">&ensp;
+    <strong>pinpto high school</strong>
+    <hr>
+</div>
+    <section>
+        <label for="">MATHS</label><br>
+        <input type="text" placeholder=" first CA" id="jay">
+        <input type="text" placeholder=" second CA" id="kay">
+        <input type="text" placeholder=" third CA" id="say">
+        <button onclick="math ()">ADD</button>
+        <input type="text" id="ans"><br>
+    <label for="">ENGLISH</label><br>
+        <input type="text" placeholder=" first CA"id="mimi">
+        <input type="text" placeholder=" second CA" id="mama">
+        <input type="text" placeholder=" third CA" id="meme">
+        <button onclick="english ()">ADD</button>
+        <input type="text" id="equal"><br>
+        <label for="">CHEMISTRY</label><br>
+        <input type="text" placeholder=" first CA"id="papa">
+        <input type="text" placeholder=" second CA" id="pepe">
+        <input type="text" placeholder=" third CA" id="pipi">
+        <button onclick="chemistry ()">ADD</button>
+        <input type="text" id="chem"><br>
+        <label for="">ECONOMICS</label><br>
+        <input type="text" placeholder=" first CA"id="nana">
+        <input type="text" placeholder=" second CA" id="nene">
+        <input type="text" placeholder=" third CA" id="nini">
+        <button onclick="economics ()">ADD</button>
+        <input type="text" id="econ"><br>
+        <label for="">GEOGRAPHY</label><br>
+        <input type="text" placeholder=" first CA" id="dada">
+        <input type="text" placeholder=" second CA" id="dede">
+        <input type="text" placeholder=" third CA" id="didi">
+        <button onclick="geo ()">ADD</button>
+        <input type="text" id="geog"><br>
+        <label for="">BIOLOGY</label><br>
+        <input type="text" placeholder=" first CA" id="kaka">
+        <input type="text" placeholder=" second CA" id="keke">
+        <input type="text" placeholder=" third CA" id="kiki">
+        <button onclick="bio ()">ADD</button>
+        <input type="text" id="biolo">
+        <hr>
+        
+    </section>
+    <main>
+        <button onclick="average()">average score </button><br>
+        <input type="text" placeholder="result" id="promax">
+        <input type="text" placeholder="grade" id="minimax">
+        <button onclick="clean ()" style="color: azure; background-color: black;">ERASE</button>
+    </main>
+
+
+    
+    <script>
+        function math (){
+            var rash= Number(document.getElementById("say").value) + Number(document.getElementById("kay").value) + Number(document.getElementById("jay").value) 
+document.getElementById("ans").value = rash
+
+        }
+        function english (){
+            var mac= Number(document.getElementById("mimi").value) + Number(document.getElementById("mama").value) + Number(document.getElementById("meme").value) 
+document.getElementById("equal").value = mac
+
+        }
+        function chemistry (){
+            var anty= Number(document.getElementById("papa").value) + Number(document.getElementById("pepe").value) + Number(document.getElementById("pipi").value)
+            document.getElementById("chem").value = anty
+
+        }
+        function economics (){
+            var prol= Number(document.getElementById("nana").value) + Number(document.getElementById("nene").value) + Number(document.getElementById("nini").value) 
+document.getElementById("econ").value = prol
+
+        }
+        function geo (){
+            var holl= Number(document.getElementById("dada").value) + Number(document.getElementById("didi").value) + Number(document.getElementById("dede").value) 
+document.getElementById("geog").value = holl
+
+        }
+        function bio (){
+            var grade= Number(document.getElementById("kaka").value) + Number(document.getElementById("kiki").value) + Number(document.getElementById("keke").value) 
+document.getElementById("biolo").value = grade
+
+
+        }
+        function average(){
+            var grade= Number(document.getElementById("kaka").value) + Number(document.getElementById("kiki").value) + Number(document.getElementById("keke").value) 
+var rash= Number(document.getElementById("say").value) + Number(document.getElementById("kay").value) + Number(document.getElementById("jay").value) 
+var mac= Number(document.getElementById("mimi").value) + Number(document.getElementById("mama").value) + Number(document.getElementById("meme").value) 
+var anty= Number(document.getElementById("papa").value) + Number(document.getElementById("pepe").value) + Number(document.getElementById("pipi").value)
+var prol= Number(document.getElementById("nana").value) + Number(document.getElementById("nene").value) + Number(document.getElementById("nini").value) 
+            var few = grade + mac + rash + prol +anty
+            var joy = few / 5
+            document.getElementById("promax").value = joy
+            if (joy < "49.9"){
+                document.getElementById("minimax").value = "failed"
+            }
+            else if( joy  > "50"){
+                document.getElementById("minimax").value ="passed"
+            }
+        }
+        function clean(){
+            document.getElementById("promax").value =''
+            document.getElementById("minimax").value =''
+            document.getElementById("say").value =''
+            document.getElementById("kay").value =''
+            document.getElementById("jay").value =''
+            document.getElementById("papa").value =''
+            document.getElementById("pipi").value =''
+            document.getElementById("pepe").value =''
+            document.getElementById("mama").value =''
+            document.getElementById("meme").value =''
+            document.getElementById("mimi").value =''
+            document.getElementById("nana").value =''
+            document.getElementById("nene").value =''
+            document.getElementById("nini").value =''
+            document.getElementById("dada").value =''
+            document.getElementById("dede").value =''
+            document.getElementById("didi").value =''
+            document.getElementById("kaka").value =''
+            document.getElementById("kiki").value =''
+            document.getElementById("keke").value =''
+            document.getElementById("ans").value =''
+            document.getElementById("equal").value =''
+            document.getElementById("chem").value =''
+            document.getElementById("biolo").value =''
+            document.getElementById("econ").value =''
+            document.getElementById("geog").value =''
+
+        }
+        
+                
+            
+        
+         
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1{
+    height: 40vh;
+    width: 100%;
+    font-size: 60px;
+    padding-top: 30px;
+    padding-bottom: 0px;
+    text-align: center;
+    text-shadow: 5px 2px blue;
+    animation: 2s seyi ease-in-out;
+
+}
+.pimp{
+    width: 100%;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    text-align: center;
+
+}
+section{
+    height: 40vh;
+    width: 100%;
+    padding-left: 20%;
+    font-weight: bolder;
+    animation:3s sam  ;
+    
+}
+label{
+    color: red;
+}
+input{
+    width: 120px;
+}
+#ori{
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    padding-left: 5px;
+    border-color: rgb(20, 20, 20);
+    border: 2;
+}
+hr{
+    width: 70%;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+main{
+    padding-left: 50%;
+    height: 90px;
+}
+#promax{
+    width: 150px;
+    height: 30px;
+
+}
+#minimax{
+    width: 100px;
+    height: 30px;
+}
+@keyframes seyi {
+    0%{ transform: translateY(-100px);
+    
+    }
+    50%{ transform: translateX(80px);}
+}
+@keyframes sam{
+    0%{
+        transform: translateX(-100px);
+    }
+    50%{
+        transform: translateY(60px);
+    }
+}
